@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hayashi Japanese Fusion provides a delicious japanese fusion experience with outstanding, authentic food">
+    <meta name="author" content="Vincent Lin">
+    <meta name="keywords" content="sushi, japanese food, japanese, japanese cuisine, japanese restaurant">
+    <link rel="stylesheet" href="menuStyle.css">
+    <title>Hayashi Sushi</title>
+</head>
+<body onscroll="scrollFunc()" onload="navOpen()">
+    <div id="titleClass" class="titleClass">
+        <h1 id="title">Menu</h1>
+        <p id="slogan">Explore Happiness</p>
+    </div>
+    <div class="bannerIMG"></div>
+    <h1 id="name">Hayashi</h1>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+    </div>
+
+    <div id="navigation">
+        <div id="navigationHeader">
+            <div id="textIMG">
+                <h1 onclick="navOpen()" >Navigation</h1>
+                <img onclick="navOpen()" id="navigationIcon" src="Images\ForWebsite\nav bars menu.png">
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="butStyle" onclick="setURL('menu/appetizer.html')">Appetizer</button>
+        </div>
+    </div>
+
+    <iframe id="iframe" src="google.com" onload="setiFrame()"></iframe>
+
+</body>
+<script src="javascript.js"></script>
+<script src="iframe.js"></script>
+</html>

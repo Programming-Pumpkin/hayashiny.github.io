@@ -1,0 +1,194 @@
+html {
+    overflow-y:scroll;
+    scroll-behavior:smooth;
+    margin-bottom:1000px;
+}
+
+body{
+    background: url("Images/ForWebsite/background.png");
+    margin:0px;
+    overflow:hidden;
+}
+
+.bannerIMG{
+    background-image:url("Images/ForWebsite/menu.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    width:100%;
+    height:1000px;
+    filter:blur(6px);
+    overflow:hidden;
+    margin:-6px -12px -10px -3px;
+    z-index:-99;
+    transform:scale(1.03);
+}
+
+#name{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    position:absolute;
+    top:0%;
+    left:1%;
+}
+
+.titleClass{
+    display:block;
+    top:500px;
+    left:50%;
+    overflow:hidden;
+    z-index:10;
+    transform: translate(-50%, -50%);
+    transition:all 200ms ease-in-out;
+}
+
+#titleClass{
+    position:fixed;
+    opacity:1;
+    transition:all 200ms ease-in-out;
+}
+
+#title{
+    font-family:AvantGarde;
+    color:rgb(255, 255, 255);
+    margin:auto;
+    z-index:10;
+    font-size:80px;
+    text-align:center;
+    opacity:1;
+    transition:all 200ms ease-in-out;
+}
+
+#slogan{
+    font-family:AvantGarde;
+    color:white;
+    margin:auto;
+    z-index:10;
+    text-align:center;
+    font-size:30px;
+    transition:all 200ms ease-in-out;
+}
+
+.titleClass a{
+    font-size:20px;
+    color:white;
+    text-decoration:none;
+    border-bottom:1px solid currentColor;
+    padding:5px;
+    font-family:AvantGarde;
+    line-height:50px;
+    margin-left:60px;
+    transition:all 200ms ease-in-out;
+}
+
+.titleClass a:hover{
+    background-color:rgba(124, 124, 124, 0.541);
+    border-bottom:none;
+}
+
+.nav{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    font-size:20px;
+    position: absolute;
+    top:2%;
+    right:1%;
+    word-spacing:20px;
+    transition:all 200ms ease-in-out;
+}
+
+.nav a{
+    text-decoration:none;
+    padding:10px;
+}
+
+.nav a:link{
+    color:white;
+}
+
+.nav a:visited{
+    color:white;
+}
+
+.nav a:hover{
+    background-color:rgba(146, 146, 146, 0.432);
+}
+
+#navigation{
+    font-family:AvantGarde;
+    background-image:linear-gradient(to right, #b7ca88bb,#85b142c2);
+    color:white;
+    z-index:99;
+    padding:5px;
+    margin-top:18px;
+    overflow:hidden;
+    height:70px;
+}
+
+#textIMG:hover{
+    cursor:pointer;
+}
+
+#navigationHeader{
+    overflow:hidden;
+    height:90px;
+    transition:all 200ms ease-in-out;
+}
+
+#navigationIcon{
+    height:50px;
+    width:50px;
+    transition:all 100ms ease-in-out;
+}
+
+#textIMG{
+    width:220px;
+    margin:auto;
+}
+
+#textIMG h1{
+    float:left;
+}
+
+#textIMG img{
+    margin-top:16px;
+    float:right;
+}
+
+#buttons{
+    position:relative;
+    margin:auto;
+}
+
+#butStyle{
+    border:2px solid #85B142;
+    background:none;
+    padding:10px;
+    color:white;
+    font-size:20px;
+    transition:all 200ms ease-in-out;
+    margin:5px;
+}
+
+#butStyle:hover{
+    background-color:#D2DFB4;
+    color:rgb(139, 139, 139);
+    border:2px solid #85B142;
+}
+
+#iframe{
+    margin-left:50%;
+    margin-top:100px;
+    transform:translate(-50%,50%);
+}
+
+@font-face{
+    font-family:AvantGarde;
+    src:url(AvantGardeGothicLight.woff);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi){
+    .titleClass{
+        top:380px;
+    }
+
+}

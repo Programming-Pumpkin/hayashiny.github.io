@@ -1,0 +1,236 @@
+html {
+    overflow-y:scroll;
+    scroll-behavior:smooth;
+}
+
+body{
+    background: url("Images/ForWebsite/background.png");
+    margin:0px;
+    overflow:hidden;
+}
+
+.bannerIMG{
+    background-image:url("Images/ForWebsite/sushi banner image cropped.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    width:100%;
+    height:1200px;
+    filter:blur(6px);
+    overflow:hidden;
+    margin:-6px -12px -12px -3px;
+    z-index:-99;
+    transform:scale(1.03);
+}
+
+#name{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    position:absolute;
+    top:0%;
+    left:1%;
+}
+
+.titleClass{
+    display:block;
+    top:500px;
+    left:50%;
+    position:absolute;
+    overflow:hidden;
+    z-index:10;
+    transform: translate(-50%, -50%);
+}
+
+#titleClass{
+    position:fixed;
+    opacity:1;
+    transition:all 200ms ease-in-out;
+}
+
+
+#title{
+    font-family:AvantGarde;
+    color:rgb(255, 255, 255);
+    margin:auto;
+    z-index:10;
+    font-size:80px;
+    text-align:center;
+    opacity:1;
+    transition:all 200ms ease-in-out;
+}
+
+#slogan{
+    font-family:AvantGarde;
+    color:white;
+    margin:auto;
+    z-index:10;
+    text-align:center;
+    font-size:30px;
+    transition:all 200ms ease-in-out;
+}
+
+.nav{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+    font-size:20px;
+    position: absolute;
+    top:2%;
+    right:1%;
+    word-spacing:20px;
+    transition:all 200ms ease-in-out;
+}
+
+.nav a{
+    text-decoration:none;
+    padding:10px;
+}
+
+.nav a:link{
+    color:white;
+}
+
+.nav a:visited{
+    color:white;
+}
+
+.nav a:hover{
+    background-color:rgba(146, 146, 146, 0.432);
+}
+
+.section1{
+    padding-top:300px;
+    width:1500px;
+    margin:auto;
+    font-family:AvantGarde;
+}
+
+#titleS1{
+    font-size:40px;
+    line-height:normal;
+    z-index:10;
+}
+
+#subtextS1{
+    font-size:20px;
+    font-weight:600;
+    width:50%;
+    min-width:50%;
+    float:left;
+    line-height:1.5;
+    background-color:#f0f4e388;
+    height:340px;
+    padding-top:102px;
+    padding-left:20px;
+    padding-right:190px;
+    transform: translate(0%,-35%);
+}
+
+#imgS1{
+    width:500px; 
+    height:400px;
+    border:20px solid #85b14270;
+    float:right;
+}
+
+#titleS2{
+    font-size:40px;
+    line-height:normal;
+}
+
+.section2{
+    width:1530px;
+    margin:auto;
+    font-family:AvantGarde;
+    padding-top:600px;
+}
+
+#subtextS2{
+    font-size:20px;
+    font-weight:600;
+    float:right;
+    width:50%;
+    background-color:#f0f4e388;
+    height:340px;
+    padding-top:102px;
+    padding-left:20px;
+    padding-right:165px;
+    transform: translate(-2%,-35%);
+}
+
+#imgS2{
+    width:500px; 
+    height:400px;
+    border:20px solid #85b14270;
+    float:left;
+    margin-left:23px;
+}
+
+.slideIn{
+    opacity:0;
+    transition:all 200ms;
+}
+
+.align-left.slideIn{
+    transform:translate(-40%,-30%) scale(0.95);
+}
+
+.align-right.slideIn{
+    transform: translate(40%,-30%) scale(0.95);
+}
+
+.slideIn.active{
+    opacity:1;
+    transform:translate(0%,-30%) scale(1);
+}
+
+@font-face{
+    font-family:AvantGarde;
+    src:url(AvantGardeGothicLight.woff);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) { 
+    .titleClass{
+        top:380px;
+    }
+    
+    #imgS1{
+        width:400px;
+        height:300px;
+        margin-right:100px;
+    }
+
+    #subtextS1{
+        padding-top:80px;
+        padding-bottom:20px;
+        width:45%;
+        min-width:45%;
+        height:240px;
+        transform:translate(10%,-31%);
+    }
+
+    #imgS2{
+        width:400px;
+        height:300px;
+        margin-left:100px;
+    }
+
+    #subtextS2{
+        width:44%;
+        min-width:44%;
+        height:240px;
+        transform:translate(-16.5%,-31%);
+    }
+
+    .align-left.slideIn{
+        transform:translate(-40%,-30%) scale(0.95);
+    }
+    
+    .align-right.slideIn{
+        transform:translate(40%,-25%) scale(0.95);
+    }
+    
+    .slideIn.active{
+        opacity:1;
+        transform:translate(0%,-25%) scale(1);
+    }
+
+}
