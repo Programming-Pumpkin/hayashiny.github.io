@@ -1,0 +1,33 @@
+html{
+    margin-bottom:1000px;
+    background-color:#f0f4e379;
+}
+
+body{
+    margin:10px;
+}
+
+.container{
+    font-family:AvantGarde;
+}
+
+::-webkit-scrollbar {
+    width:5px;
+}
+
+::-webkit-scrollbar-track {
+    background:rgba(194, 193, 193, 0.555); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.37); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(85, 85, 85, 0.521); 
+}
+
+@font-face {
+    font-family:AvantGarde;
+    src:url(AvantGardeGothicLight.woff);
+}
