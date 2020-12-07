@@ -1,0 +1,1 @@
+# hayashiny.github.io
