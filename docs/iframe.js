@@ -4,6 +4,6 @@ function setURL(url){
     document.getElementById('iframe').src = url;
 }
 
-function setiFrame(){
+iframe.onload = function(){
     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
 }
