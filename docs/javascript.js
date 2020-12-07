@@ -35,13 +35,14 @@ function slide(e){
         }else{
             sliderImage.classList.remove('active');
         }
-        console.log(slideInAt);
+        //console.log(slideInAt);
     })
 }
 window.addEventListener('scroll', debounce(slide));
 
 function scrollFunc(){
     var titleClass = document.getElementById('titleClass');
+    var navigationClass = document.getElementById("navigation");
 
     if(window.scrollY > 500){
         titleClass.style.opacity = "0";
@@ -51,18 +52,32 @@ function scrollFunc(){
         titleClass.style.opacity = "1";
     }
     
-    //console.log();
-};
+    if(window.scrollY >= 1000){
+        navigationClass.style.position = "fixed";
+        navigationClass.style.top = "0px"
+        navigationClass.style.margin = "0px"
+    }else{
+        navigationClass.style.position = "absolute";
+        navigationClass.style.top = "auto";
+        navigationClass.style.marginTop = "18px";
+    }
+
+    //console.log(window.scrollY);
+}
 
 function navOpen(){
     var elemt = document.getElementById("navigation");
     var elemtIcon = document.getElementById("navigationIcon");
 
-    if(elemt.style.height != "500px"){
-        elemt.style.height = "500px";
+    if(elemt.style.height != "350px"){
+        elemt.style.height = "350px";
         elemtIcon.style.transform = "rotate(90deg) translate(0px,0px)";
     }else{
         elemt.style.height = "70px";    
         elemtIcon.style.transform = "rotate(0deg) translate(0px,-2px)";
     } 
+}
+
+function setURL(url){
+    document.getElementById('iframe').src = url;
 }
