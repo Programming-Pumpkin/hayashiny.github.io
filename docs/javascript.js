@@ -35,7 +35,7 @@ function slide(e){
         }else{
             sliderImage.classList.remove('active');
         }
-        //console.log(slideInAt);
+        console.log(slideInAt);
     })
 }
 window.addEventListener('scroll', debounce(slide));
@@ -62,7 +62,7 @@ function scrollFunc(){
         navigationClass.style.marginTop = "18px";
     }
 
-    //console.log(window.scrollY);
+    console.log(window.scrollY);
 }
 
 function navOpen(){
