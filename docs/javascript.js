@@ -1,3 +1,5 @@
+document.domain = 'https://hayashiny.github.io/restaurant/';
+
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
@@ -69,15 +71,26 @@ function navOpen(){
     var elemt = document.getElementById("navigation");
     var elemtIcon = document.getElementById("navigationIcon");
 
-    if(elemt.style.height != "350px"){
-        elemt.style.height = "350px";
-        elemtIcon.style.transform = "rotate(90deg) translate(0px,0px)";
+    if(elemt.style.height != "700px"){
+        elemt.style.height = "700px";
+        elemt.style.width = "310px";
+        elemtIcon.style.transform = "rotate(90deg)";
     }else{
         elemt.style.height = "70px";    
-        elemtIcon.style.transform = "rotate(0deg) translate(0px,-2px)";
+        elemt.style.width = "60px";
+        elemtIcon.style.transform = "rotate(0deg)";
     } 
 }
 
 function setURL(url){
     document.getElementById('iframe').src = url;
+}
+
+function iframeLoaded() {
+    var iFrameID = document.getElementById("iframe");
+    if(iFrameID) {
+          // here you can make the height, I delete it first, then I make it again
+          iFrameID.height = "";
+          iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+    }   
 }
