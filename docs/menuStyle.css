@@ -116,14 +116,16 @@ body{
 
 #navigation{
     font-family:AvantGarde;
-    background-image:linear-gradient(to right, #b7ca88,#85b142);
+    background-image:linear-gradient(to right, #b7ca887e,#85b14288);
     color:white;
     z-index:99;
     padding:5px;
-    margin-top:18px;
+    margin-top:100px;
+    transform: translateY(185px);
+    float:left;
     overflow:hidden;
     height:70px;
-    width:100%;
+    width:60px;
     box-sizing:border-box;
     position:absolute;
     transition:all 200ms ease-in-out;
@@ -147,22 +149,17 @@ body{
 
 #textIMG{
     width:220px;
-    margin:auto;
 }
 
-#textIMG h1{
-    float:left;
-}
 
 #textIMG img{
     margin-top:16px;
-    float:right;
 }
 
 #buttons{
     position:relative;
     margin:auto;
-    width:800px;
+    width:300px;
     text-align:center;
 }
 
@@ -187,10 +184,11 @@ body{
     display:block;
     margin:0 auto;
     margin-top:200px;
-    height:1000px;
+    height:900px;
     width:1200px;
     border:none;
 }
+
 
 @font-face{
     font-family:AvantGarde;
