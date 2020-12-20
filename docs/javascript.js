@@ -1,5 +1,3 @@
-document.domain = 'https://hayashiny.github.io/restaurant/';
-
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
@@ -84,13 +82,4 @@ function navOpen(){
 
 function setURL(url){
     document.getElementById('iframe').src = url;
-}
-
-function iframeLoaded() {
-    var iFrameID = document.getElementById("iframe");
-    if(iFrameID) {
-          // here you can make the height, I delete it first, then I make it again
-          iFrameID.height = "";
-          iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-    }   
 }
