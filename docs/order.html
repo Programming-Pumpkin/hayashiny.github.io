@@ -6,14 +6,13 @@
     <meta name="description" content="Hayashi Japanese Fusion provides a delicious japanese fusion experience with outstanding, authentic food">
     <meta name="author" content="Vincent Lin">
     <meta name="keywords" content="sushi, japanese food, japanese, japanese cuisine, japanese restaurant">
-    <link rel="stylesheet" href="orderStyle.css">
+    <link rel="stylesheet" href="menuStyle.css">
     <title>Hayashi Sushi</title>
 </head>
-<body onscroll="debounce(scrollFunc())">
+<body onscroll="scrollFunc()" onload="navOpen(); iframeLoaded()">
     <div id="titleClass" class="titleClass">
-        <h1 id="title">Order</h1>
-        <p id="slogan">Simply easier</p>
-        <a id="direction" href="#map">Directions</a>
+        <h1 id="title">Menu</h1>
+        <p id="slogan">Explore Happiness</p>
     </div>
     <div class="bannerIMG"></div>
     <h1 id="name">Hayashi</h1>
@@ -23,38 +22,38 @@
         <a href="order.html">Order</a>
     </div>
 
-    <div class="Container">
-        <div class="hl">
-            <h1 id="hlHeader">Hours | Location</h1>
-            <p id="location">2901 Ocean Ave, <br>Brooklyn NY, 11235</p>
-            <br>
-            <div class="days">
-                <h3>6 Days A Week | Closed Monday</h3>
-                <p>Tuesday-Thursday: 11:30AM - 10:30PM</p>
-                <p>Friday: 11:30AM - 11PM</p>
-                <p>Saturday: 12AM - 11PM</p>
-                <p>Sunday: 12AM - 10:30PM</p>
+    <div id="navigation">
+        <div id="navigationHeader">
+            <div id="textIMG">
+                <img onclick="navOpen()" id="navigationIcon" src="Images\ForWebsite\nav bars menu.png">
             </div>
+        </div>
+        <div id="buttons">
+                <button id="butStyle" onclick="setURL('menu/appetizer.html'); ">Appetizer</button>
+                <button id="butStyle" onclick="setURL('menu/soup.html');">Soup</button>
+                <button id="butStyle" onclick="setURL('menu/salad.html');">Salad</button>
+                <button id="butStyle" onclick="setURL('menu/entre.html');">Entre</button>
             <br>
-            <p id="note">Note: We currently do not offer dine-in due to COVID-19.</p>
+                <button id="butStyle" onclick="setURL('menu/partyplatter.html');">Party Platter</button>
+                <button id="butStyle" onclick="setURL('menu/specialrolls.html');">Special Rolls</button>
+                <button id="butStyle" onclick="setURL('menu/regularrolls.html');">Regular Rolls</button>
+                <button id="butStyle" onclick="setURL('menu/alacarte.html');">A La Carte</button>
+            <br>
+                <button id="butStyle" onclick="setURL('menu/asianfusion.html');">Asian Fusion</button>
+                <button id="butStyle" onclick="setURL('menu/hibachi.html');">Hibachi</button>
+                <button id="butStyle" onclick="setURL('menu/tempura.html');">Tempura</button>
+                <button id="butStyle" onclick="setURL('menu/noodles.html');">Noodles</button>
+            <br>
+                <button id="butStyle" onclick="setURL('menu/friedrice.html');">Fried Rice</button>
+                <button id="butStyle" onclick="setURL('menu/dinnerbentobox.html');">Dinner Bento Box</button>
+                <button id="butStyle" onclick="setURL('menu/hayashilunch.html');">Hayashi Lunch</button>
+                <button id="butStyle" onclick="setURL('menu/dessert.html');">Dessert</button>
+                <button id="butStyle" onclick="setURL('menu/beverages.html');">Beverages</button>
         </div>
     </div>
 
-    <div class="Container">
-        <div class="order">
-            <h1 id="orderHeader">Ordering</h1>
-            <p id="orderInfo">Rather stay in the comfort of your home? We understand many of us are busy and simply don't have the time, so we're happy to provide delievery or pickup orders! Simply click on one of the available delivery services! <span style="font-style:italic;font-size:smaller;font-family:Helvetica, sans-serif;">(prices may differ depending on seller)</span></p>
-            <a target="_blank" href="https://www.seamless.com/menu/hayashi-japanese-fusion-2901-ocean-ave-brooklyn/81593"><span id="seamless"><img class="button" id="seamless" src="Images\ForWebsite\seamless button.png"></span></a>
-            <a target="_blank" href="https://www.grubhub.com/restaurant/hayashi-japanese-fusion-2901-ocean-ave-brooklyn/81593"><span id="grubhub"><img class="button" id="grubhub" src="Images\ForWebsite\grubhub button.png"></span></a>
-            <a target="_blank" href="https://www.ubereats.com/new-york/food-delivery/hayashi/zFVOTplQRP-M6Y7zut4y2g?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkhheWFzaGklMjBTdXNoaSUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUo0WGVCNldKRXdva1IyYVIyZk1ScDhwQSUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC41OTA2NSUyQyUyMmxvbmdpdHVkZSUyMiUzQS03My45NDk1MjY3JTdE"><span id="ubereats"><img class="button" src="Images\ForWebsite\ubereats button.png"></span></a>
-            <p style="margin-bottom:25px;">Or if online ordering isn't your thing, feel free to call us at:</p>
-            <a id="telephone" href="tel:718-368-3668">718-368-3668</a>
-        </div>
-    </div>
+    <iframe id="iframe" src="menu/appetizer.html"></iframe>
 
-    <div class="Container">
-        <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12119.145929800734!2d-73.9495447!3d40.5904682!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90f269c47c76a4d9!2sHayashi%20Sushi!5e0!3m2!1sen!2sus!4v1607046726158!5m2!1sen!2sus" width="100%" height="800px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-    </div>
 </body>
 <script src="javascript.js"></script>
 </html>
