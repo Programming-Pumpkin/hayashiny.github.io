@@ -1,5 +1,4 @@
 html{
-    margin-bottom:1000px;
     background-color:#f0f4e379;
 }
 
@@ -9,6 +8,7 @@ body{
 
 .container{
     font-family:AvantGarde;
+    margin-left:40px;
 }
 
 ::-webkit-scrollbar {
@@ -25,6 +25,79 @@ body{
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(85, 85, 85, 0.521); 
+}
+
+.table{
+    font-family:AvantGarde;
+}
+
+.section1{
+    width:60%;
+    font-size:20px;
+}
+
+.section2{
+    width:60%;
+    font-size:20px;
+}
+
+.sec1{
+    float:left;
+}
+
+.sec2{
+    float:left;
+    margin-bottom:10px;
+}
+
+.dish{
+    float:left;
+    font-size:22px;
+    font-family:Helvetica, sans-serif;
+}
+
+.choice{
+    line-height:13px;
+    margin-bottom:-10px;
+    padding-bottom:-10px;
+    font-family:Helvetica, sans-serif;
+}
+
+p{
+    margin-bottom:-13px;
+}
+
+.price{
+    float:right;
+    margin-left:120px;
+    font-size:21px;
+}
+
+.priceShift{
+    float:right;
+    margin-left:100px;
+    font-size:21px;
+    font-family:AvantGarde;
+}
+
+.extra{
+    color:#8CB743;
+    float:right;
+    margin-left:-5px;
+    font-size:21px;
+}
+
+.detail{
+    font-size:15px;
+    width:300px;
+    text-align:left;
+    font-family:AvantGarde;
+}
+
+hr{
+    margin-left:0px;
+    width:800px;
+    border:2px dashed #8CB743;
 }
 
 @font-face {

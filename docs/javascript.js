@@ -80,6 +80,14 @@ function navOpen(){
     } 
 }
 
+const iframe = document.getElementById('iframe');
+const loadText = document.getElementById('loadText');
+
 function setURL(url){
     document.getElementById('iframe').src = url;
+    loadText.style.display = "";
 }
+
+iframe.addEventListener("load",function(){
+    loadText.style.display = "none";
+})
