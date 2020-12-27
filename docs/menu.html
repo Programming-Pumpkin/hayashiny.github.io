@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="menuStyle.css">
     <title>Hayashi Sushi</title>
 </head>
-<body onscroll="scrollFunc()" onload="navOpen()">
+<body onscroll="scrollFunc()" onload="navOpen();">
     <div id="titleClass" class="titleClass">
         <h1 id="title">Menu</h1>
         <p id="slogan">Explore Happiness</p>
@@ -29,30 +29,31 @@
             </div>
         </div>
         <div id="buttons">
-                <button id="butStyle" onclick="setURL('menu/appetizer.html'); ">Appetizer</button>
-                <button id="butStyle" onclick="setURL('menu/soup.html');">Soup</button>
-                <button id="butStyle" onclick="setURL('menu/salad.html');">Salad</button>
-                <button id="butStyle" onclick="setURL('menu/entre.html');">Entre</button>
+                <button id="butStyle" onclick="setURL('menu/appetizer.html');">Appetizer</button>
+                <button id="butStyle" onclick="setURL('menu/asianfusion.html');">Asian Fusion</button>
+                <button id="butStyle" onclick="setURL('menu/alacarte.html');">A La Carte</button>
+                <button id="butStyle" onclick="setURL('menu/entre.html');">Entrée</button>
             <br>
+                <button id="butStyle" onclick="setURL('menu/friedrice.html');">Fried Rice</button>
+                <button id="butStyle" onclick="setURL('menu/noodles.html');">Noodles</button>
+                <button id="butStyle" onclick="setURL('menu/hibachi.html');">Hibachi</button>
+                <button id="butStyle" onclick="setURL('menu/tempura.html');">Tempura</button>
+            <br>
+                <button id="butStyle" onclick="setURL('menu/dinnerbentobox.html');">Dinner Bento Box</button>
+                <button id="butStyle" onclick="setURL('menu/hayashilunch.html');">Hayashi Lunch</button>
                 <button id="butStyle" onclick="setURL('menu/partyplatter.html');">Party Platter</button>
                 <button id="butStyle" onclick="setURL('menu/specialrolls.html');">Special Rolls</button>
                 <button id="butStyle" onclick="setURL('menu/regularrolls.html');">Regular Rolls</button>
-                <button id="butStyle" onclick="setURL('menu/alacarte.html');">A La Carte</button>
             <br>
-                <button id="butStyle" onclick="setURL('menu/asianfusion.html');">Asian Fusion</button>
-                <button id="butStyle" onclick="setURL('menu/hibachi.html');">Hibachi</button>
-                <button id="butStyle" onclick="setURL('menu/tempura.html');">Tempura</button>
-                <button id="butStyle" onclick="setURL('menu/noodles.html');">Noodles</button>
-            <br>
-                <button id="butStyle" onclick="setURL('menu/friedrice.html');">Fried Rice</button>
-                <button id="butStyle" onclick="setURL('menu/dinnerbentobox.html');">Dinner Bento Box</button>
-                <button id="butStyle" onclick="setURL('menu/hayashilunch.html');">Hayashi Lunch</button>
+                <button id="butStyle" onclick="setURL('menu/soup.html');">Soup</button>
+                <button id="butStyle" onclick="setURL('menu/salad.html');">Salad</button>
                 <button id="butStyle" onclick="setURL('menu/dessert.html');">Dessert</button>
                 <button id="butStyle" onclick="setURL('menu/beverages.html');">Beverages</button>
         </div>
     </div>
-
+    <p id="loadText">Loading...</p>
     <iframe id="iframe" src="menu/appetizer.html"></iframe>
+    
 
 </body>
 <script src="javascript.js"></script>
