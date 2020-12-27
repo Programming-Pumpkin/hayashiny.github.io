@@ -116,7 +116,7 @@ body{
 
 #navigation{
     font-family:AvantGarde;
-    background-image:linear-gradient(to right, #b7ca887e,#85b14288);
+    background-image:linear-gradient(to right, #b7ca88,#85b142);
     color:white;
     z-index:99;
     padding:5px;
@@ -189,6 +189,15 @@ body{
     border:none;
 }
 
+#loadText{
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgba(41, 41, 41, 0.534);
+    position:absolute;
+    font-size:30px;
+    top:1550px;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
 
 @font-face{
     font-family:AvantGarde;
