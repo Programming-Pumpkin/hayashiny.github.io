@@ -116,7 +116,7 @@ body{
 
 #navigation{
     font-family:AvantGarde;
-    background-image:linear-gradient(to right, #b7ca88,#85b142);
+    background-image:linear-gradient(to right, #b7ca88e8,#85b142ee);
     color:white;
     z-index:99;
     padding:5px;
