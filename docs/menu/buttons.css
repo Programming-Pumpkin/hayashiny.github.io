@@ -34,11 +34,13 @@ body{
 .section1{
     width:60%;
     font-size:20px;
+    display:inline;
 }
 
 .section2{
     width:60%;
     font-size:20px;
+    display:inline;
 }
 
 .sec1{
@@ -82,7 +84,7 @@ p{
 
 .extra{
     color:#8CB743;
-    float:right;
+    float:left;
     margin-left:-5px;
     font-size:21px;
 }
@@ -98,6 +100,15 @@ hr{
     margin-left:0px;
     width:800px;
     border:2px dashed #8CB743;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+    background-color:#8db74383;
+    border-radius:25px;
+    color:white;
 }
 
 @font-face {

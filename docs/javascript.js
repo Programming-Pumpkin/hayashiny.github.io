@@ -62,7 +62,7 @@ function scrollFunc(){
         navigationClass.style.marginTop = "18px";
     }
 
-    console.log(window.scrollY);
+    //console.log(window.scrollY);
 }
 
 function navOpen(){
@@ -90,4 +90,6 @@ function setURL(url){
 
 iframe.addEventListener("load",function(){
     loadText.style.display = "none";
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 50 + "px";
 })
+
