@@ -53,9 +53,15 @@ function scrollFunc(){
     }
     
     if(window.scrollY >= 1000){
-        navigationClass.style.position = "fixed";
-        navigationClass.style.top = "0px"
-        navigationClass.style.margin = "0px"
+        if(window.screen.width >= 1366){
+            navigationClass.style.position = "fixed";
+            navigationClass.style.top = "0px"
+            navigationClass.style.margin = "0px"
+        }else{
+            navigationClass.style.position = "absolute";
+            navigationClass.style.top = "auto"
+            navigationClass.style.margin = "18px 0px 0px"
+        }
     }else{
         navigationClass.style.position = "absolute";
         navigationClass.style.top = "auto";
@@ -65,19 +71,25 @@ function scrollFunc(){
     //console.log(window.scrollY);
 }
 
+var height = document.getElementById("navigation").offsetHeight;
+var width = document.getElementById("navigation").offsetWidth;
+
 function navOpen(){
     var elemt = document.getElementById("navigation");
     var elemtIcon = document.getElementById("navigationIcon");
 
-    if(elemt.style.height != "700px"){
-        elemt.style.height = "700px";
-        elemt.style.width = "310px";
+    if(parseInt(elemt.style.height) != height){
+        elemt.style.height = height + "px";
+        elemt.style.width = width + "px";
         elemtIcon.style.transform = "rotate(90deg)";
     }else{
         elemt.style.height = "70px";    
         elemt.style.width = "60px";
         elemtIcon.style.transform = "rotate(0deg)";
     } 
+    
+    //console.log(elemt.offsetHeight);
+    //console.log(height);
 }
 
 const iframe = document.getElementById('iframe');
