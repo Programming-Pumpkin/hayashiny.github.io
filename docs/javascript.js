@@ -63,7 +63,7 @@ function scrollFunc(){
     if(window.scrollY >= 1000){
         if(window.screen.width >= 1300){
             navigationClass.style.position = "fixed";
-            navigationClass.style.top = "140px"
+            navigationClass.style.top = "0px"
             navigationClass.style.margin = "18px 0px 0px"
         }else{
             navigationClass.style.position = "absolute";
