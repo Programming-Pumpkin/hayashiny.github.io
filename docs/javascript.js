@@ -44,7 +44,15 @@ function scrollFunc(){
     var titleClass = document.getElementById('titleClass');
     var navigationClass = document.getElementById("navigation");
 
-    if(window.scrollY > 500){
+    if(window.screen.width >= 375 && window.screen.width <= 812){
+        if(window.scrollY > 100){
+            titleClass.style.opacity = "0";
+            titleClass.style.transform = "translate(-50%,200%)";
+        }else{
+            titleClass.style.transform = "translate(-50%,-50%)";
+        titleClass.style.opacity = "1";
+        }
+    }else if(window.scrollY > 500){
         titleClass.style.opacity = "0";
         titleClass.style.transform = "translate(-50%,200%)";
     }else{
@@ -53,10 +61,10 @@ function scrollFunc(){
     }
     
     if(window.scrollY >= 1000){
-        if(window.screen.width >= 1366){
+        if(window.screen.width >= 1300){
             navigationClass.style.position = "fixed";
-            navigationClass.style.top = "0px"
-            navigationClass.style.margin = "0px"
+            navigationClass.style.top = "140px"
+            navigationClass.style.margin = "18px 0px 0px"
         }else{
             navigationClass.style.position = "absolute";
             navigationClass.style.top = "auto"
