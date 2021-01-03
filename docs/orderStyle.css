@@ -230,8 +230,136 @@ body{
     src:url(AvantGardeGothicLight.woff);
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi){
+@media screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 2){
     .titleClass{
-        top:380px;
+        top:200px;
+    }
+
+    .bannerIMG{
+        height:500px;
+        margin-bottom:-80px;
+    }
+
+    .nav{
+        word-spacing:5px;
+    }
+
+    #title{
+        font-size:40px;
+    }
+
+    #slogan{
+        font-size:15px;
+    }
+
+    #direction{
+        font-size:15px;
+        margin-left:17px;
+    }
+
+    .Container{
+        display:block;
+    }
+
+    .hl{
+        max-width:340px;
+        height:500px;
+    }
+
+    .order{
+        float:none;
+        margin-top:500px;
+        max-width:340px;
+        height:500px;
+    }
+
+    #map{
+        margin-top:0px;
+        width:320px;
+        height:800px;
+    }
+
+    #map iframe{
+        width:320px;
+        height:800px;
+    }
+  }
+
+@media screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) 
+  and (-webkit-device-pixel-ratio: 2){
+    .titleClass{
+        top:200px;
+    }
+
+    .bannerIMG{
+        height:500px;
+        margin-bottom:-80px;
+    }
+
+    .nav{
+        word-spacing:5px;
+    }
+
+    #title{
+        font-size:40px;
+    }
+
+    #slogan{
+        font-size:15px;
+    }
+
+    #direction{
+        font-size:15px;
+        margin-left:17px;
+    }
+
+    .Container{
+        display:block;
+    }
+
+    .hl{
+        max-width:320px;
+        height:500px;
+    }
+
+    .order{
+        float:none;
+        margin-top:500px;
+        max-width:300px;
+        height:500px;
+    }
+
+    #map{
+        margin-top:0px;
+        width:255px;
+        height:600px;
+    }
+
+    #map iframe{
+        width:255px;
+        height:600px;
+    }
+  }
+
+@media screen 
+and (min-width: 1300px) 
+and (max-width: 1600px) 
+and (-webkit-min-device-pixel-ratio: 2)  {
+    .titleClass{
+        top:480px;
+    }
+}
+
+@media screen 
+and (min-device-width:1200px)
+and (max-device-width:1300px)
+and (-webkit-min-device-pixel-ratio:1){
+    .titleClass{
+        top:480px;
     }
 }
