@@ -111,7 +111,7 @@ function setURL(url){
 
 iframe.addEventListener("load",function(){
     loadText.style.display = "none";
-    var adjustedHeight = iframe.contentWindow.document.body.scrollHeight + 50;
+    var adjustedHeight = iframe.contentWindow.document.body.offsetHeight + 50;
     if(window.screen.width < 1000){
         iframe.style.height = adjustedHeight + "px";
         bodyRef.style.height = 1000 + adjustedHeight + "px";
