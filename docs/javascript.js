@@ -119,8 +119,8 @@ iframe.addEventListener("load",function(){
         iframe.style.height = adjustedHeight + "px";
     }
 
-    //console.log("Body: " + document.body.style.height);
-    //console.log("AdjustHeight: " + adjustedHeight);
-    //console.log("iFrameHeight: " + iframe.style.height);
+    console.log("Body: " + document.body.style.height);
+    console.log("AdjustHeight: " + adjustedHeight);
+    console.log("iFrameHeight: " + iframe.style.height);
 })
 
