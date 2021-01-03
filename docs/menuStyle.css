@@ -191,6 +191,7 @@ body{
 
 .wrap{
     -webkit-overflow-scrolling: touch;
+    overflow-y:scroll;
 }
 
 #loadText{
