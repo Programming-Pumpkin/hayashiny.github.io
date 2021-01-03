@@ -44,7 +44,7 @@ function scrollFunc(){
     var titleClass = document.getElementById('titleClass');
     var navigationClass = document.getElementById("navigation");
 
-    if(window.screen.width >= 375 && window.screen.width <= 812){
+    if(window.screen.width >= 320 && window.screen.width <= 812){
         if(window.scrollY > 100){
             titleClass.style.opacity = "0";
             titleClass.style.transform = "translate(-50%,200%)";
