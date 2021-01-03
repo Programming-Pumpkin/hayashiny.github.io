@@ -108,8 +108,8 @@ function setURL(url){
     loadText.style.display = "";
 }
 
-function loadFrame(){
+iframe.addEventListener("load",function(){
     loadText.style.display = "none";
     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 50 + "px";
-}
+})
 
