@@ -1,3 +1,7 @@
+var height = document.getElementById("navigation").offsetHeight;
+var width = document.getElementById("navigation").offsetWidth;
+var bodyRef = document.body;
+
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
@@ -79,9 +83,6 @@ function scrollFunc(){
     //console.log(window.scrollY);
 }
 
-var height = document.getElementById("navigation").offsetHeight;
-var width = document.getElementById("navigation").offsetWidth;
-
 function navOpen(){
     var elemt = document.getElementById("navigation");
     var elemtIcon = document.getElementById("navigationIcon");
@@ -110,6 +111,16 @@ function setURL(url){
 
 iframe.addEventListener("load",function(){
     loadText.style.display = "none";
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 50 + "px";
+    var adjustedHeight = iframe.contentWindow.document.body.scrollHeight + 50;
+    if(window.screen.width < 1000){
+        iframe.style.height = adjustedHeight + "px";
+        bodyRef.style.height = 1000 + adjustedHeight + "px";
+    }else{
+        iframe.style.height = adjustedHeight + "px";
+    }
+
+    //console.log("Body: " + document.body.style.height);
+    //console.log("AdjustHeight: " + adjustedHeight);
+    //console.log("iFrameHeight: " + iframe.style.height);
 })
 
