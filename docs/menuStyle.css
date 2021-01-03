@@ -190,7 +190,7 @@ body{
 }
 
 .wrap{
-    overflow-y:scroll;   
+    -webkit-overflow-scrolling: touch;
 }
 
 #loadText{
