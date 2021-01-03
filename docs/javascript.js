@@ -110,6 +110,6 @@ function setURL(url){
 
 iframe.addEventListener("load",function(){
     loadText.style.display = "none";
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 50 + "px";
+    iframe.style.height = iframe.contentWindow.documentElement.scrollHeight + 50 + "px";
 })
 
