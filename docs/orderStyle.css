@@ -174,12 +174,12 @@ body{
     padding:5px;
 }
 
-#seamless img{
+#deliverycom img{
     opacity:0.5;
     transition:all 200ms ease-in-out;
 }
 
-#seamless:hover img{
+#deliverycom:hover img{
     opacity:1;
     transform:scale(1.2);
 }
