@@ -114,8 +114,13 @@ iframe.addEventListener("load",function(){
     loadText.style.display = "none";
     var adjustedHeight = iframe.contentWindow.document.body.scrollHeight + 50;
     if(window.screen.width < 1000){
+        var adjustedHeight = (function(){
+                        var bHeight = localStorage.getItem("bHeight");    
+                        console.log("bHeightGetter: " + bHeight);
+                    
+                        return parseInt(bHeight)+100;
+                        })();
         iframe.style.height = adjustedHeight + "px";
-        bodyRef.style.height = 1000 + adjustedHeight + "px";
     }else{
         iframe.style.height = adjustedHeight + "px";
     }
