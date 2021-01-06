@@ -121,11 +121,12 @@ iframe.addEventListener("load",function(){
                         return parseInt(bHeight)+100;
                         })();
         iframe.style.height = adjustedHeight + "px";
+        bodyRef.scrollHeight = 100 + adjustedHeight + "px";
     }else{
         iframe.style.height = adjustedHeight + "px";
     }
 
-    console.log("Body: " + document.body.style.height);
+    console.log("Body: " + bodyRef.scrollHeight);
     console.log("AdjustHeight: " + adjustedHeight);
     console.log("iFrameHeight: " + iframe.style.height);
 })
