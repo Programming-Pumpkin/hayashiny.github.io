@@ -1,7 +1,7 @@
 html {
     overflow-y:scroll;
     scroll-behavior:smooth;
-    margin-bottom:30px;
+    margin-bottom:100px;
     max-width:100%;
 }
 
