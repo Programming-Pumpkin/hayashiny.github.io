@@ -180,6 +180,12 @@ body{
     border:2px solid #85B142;
 }
 
+h2{
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:-100px;
+}
+
 #iframe{
     display:block;
     margin:0 auto;
