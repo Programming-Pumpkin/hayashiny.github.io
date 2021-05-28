@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex: 1;
+    min-width:300px;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px;
+    font-family:AvantGarde;
+}
+
+.container h1, h2{
+    text-align:center;
+}
+
+.container p{
+    font-family:Helvetica;
+}
+
+.priceShift, .extraR{
+    float:right;
+}
+
+.detail{
+    opacity:0.5;
+}
+
+.section1, .section2{
+    background-color:#f0f4e388;
+    padding:30px;
+}
+
+.extra{
+    color:#90b691;
+}
+
+#dinner_bento_box table{
+    border-spacing:10px;
+}
+
+#dinner_bento_box td{
+    border-radius:20px;
+    background-color:#85b1428e;
+    padding:10px;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    cursor:default;
+}
+
+@font-face{
+    font-family:AvantGarde;
+    src:url(AvantGardeGothicLight.woff);
+}
