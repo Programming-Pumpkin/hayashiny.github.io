@@ -1,1 +1,1 @@
-# hayashiny.github.io
+# hayashiny.github.io/restaurant
