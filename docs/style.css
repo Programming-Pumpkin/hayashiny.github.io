@@ -41,7 +41,6 @@ body{
 }
 
 #titleClass{
-    position:fixed;
     opacity:1;
     transition:all 200ms ease-in-out;
 }

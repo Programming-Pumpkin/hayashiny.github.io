@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="innerMenu.css">
     <title>Hayashi Sushi</title>
 </head>
-<body>
-    <div id="vueLink">
+<body onload="setMenu('appetizer')">
+    <div>
         <div id="titleClass" class="titleClass">
             <h1 id="title">Menu</h1>
             <p id="slogan">Explore Happiness</p>
@@ -26,32 +26,32 @@
         <div id="navigation">
             <div id="navigationHeader">
                 <div id="textIMG">
-                    <img v-on:click="navOpen()" id="navigationIcon" src="Images\ForWebsite\nav bars menu.png">
+                    <img onclick="navOpen()" id="navigationIcon" src="Images\ForWebsite\nav bars menu.png">
                 </div>
             </div>
             <div id="buttons">
-                    <button id="butStyle" v-on:click="setMenu('appetizer')">Appetizer</button>
-                    <button id="butStyle" v-on:click="setMenu('asian_fusion')">Asian Fusion</button>
-                    <button id="butStyle" v-on:click="setMenu('a_la_carte')">A La Carte</button>
-                    <button id="butStyle" v-on:click="setMenu('entree')">Entrée</button>
+                    <button id="butStyle" onclick="setMenu('appetizer')">Appetizer</button>
+                    <button id="butStyle" onclick="setMenu('asian_fusion')">Asian Fusion</button>
+                    <button id="butStyle" onclick="setMenu('a_la_carte')">A La Carte</button>
+                    <button id="butStyle" onclick="setMenu('entree')">Entrée</button>
                 <br>
-                    <button id="butStyle" v-on:click="setMenu('fried_rice')">Fried Rice</button>
-                    <button id="butStyle" v-on:click="setMenu('noodles')">Noodles</button>
-                    <button id="butStyle" v-on:click="setMenu('don_buri')">Don Buri</button>
-                    <button id="butStyle" v-on:click="setMenu('hibachi')">Hibachi</button>
-                    <button id="butStyle" v-on:click="setMenu('teriyaki')">Teriyaki</button>
-                    <button id="butStyle" v-on:click="setMenu('tempura')">Tempura</button>
+                    <button id="butStyle" onclick="setMenu('fried_rice')">Fried Rice</button>
+                    <button id="butStyle" onclick="setMenu('noodles')">Noodles</button>
+                    <button id="butStyle" onclick="setMenu('don_buri')">Don Buri</button>
+                    <button id="butStyle" onclick="setMenu('hibachi')">Hibachi</button>
+                    <button id="butStyle" onclick="setMenu('teriyaki')">Teriyaki</button>
+                    <button id="butStyle" onclick="setMenu('tempura')">Tempura</button>
                 <br>
-                    <button id="butStyle" v-on:click="setMenu('dinner_bento_box')">Dinner Bento Box</button>
-                    <button id="butStyle" v-on:click="setMenu('hayashi_lunch')">Hayashi Lunch</button>
-                    <button id="butStyle" v-on:click="setMenu('party_platter')">Party Platter</button>
-                    <button id="butStyle" v-on:click="setMenu('special_rolls')">Special Rolls</button>
-                    <button id="butStyle" v-on:click="setMenu('regular_rolls')">Regular Rolls</button>
+                    <button id="butStyle" onclick="setMenu('dinner_bento_box')">Dinner Bento Box</button>
+                    <button id="butStyle" onclick="setMenu('hayashi_lunch')">Hayashi Lunch</button>
+                    <button id="butStyle" onclick="setMenu('party_platter')">Party Platter</button>
+                    <button id="butStyle" onclick="setMenu('special_rolls')">Special Rolls</button>
+                    <button id="butStyle" onclick="setMenu('regular_rolls')">Regular Rolls</button>
                 <br>
-                    <button id="butStyle" v-on:click="setMenu('soup')">Soup</button>
-                    <button id="butStyle" v-on:click="setMenu('salad')">Salad</button>
-                    <button id="butStyle" v-on:click="setMenu('dessert')">Dessert</button>
-                    <button id="butStyle" v-on:click="setMenu('beverages')">Beverages</button>
+                    <button id="butStyle" onclick="setMenu('soup')">Soup</button>
+                    <button id="butStyle" onclick="setMenu('salad')">Salad</button>
+                    <button id="butStyle" onclick="setMenu('dessert')">Dessert</button>
+                    <button id="butStyle" onclick="setMenu('beverages')">Beverages</button>
             </div>
         </div>
         <h2 id="disclaimer" style="margin-top:100px;">Prices are <span style="color:rgb(104, 104, 104);">NOT</span> updated in real time!<br/> Pease speak with an employee to ensure the correct price</h2>
@@ -1989,7 +1989,6 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/vue@next"></script>
     <script src="menu.js"></script>
 </body>
 <script> </script>
